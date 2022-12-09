@@ -1,0 +1,48 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button color="roxo" routerLink="/" color="primary">
+        <ion-icon slot="icon-only" name="arrow-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div id="header">
+    <h1>Produtos</h1>
+  </div>
+
+  <form id="form">
+  <ion-card>
+    <ion-item>
+      <ion-label>Produto</ion-label>
+      <ion-select placeholder="Selecione">
+        <ion-select-option value="">Paõ de queijo</ion-select-option>
+        <ion-select-option value="">Pão de leite</ion-select-option>
+        <ion-select-option value="">Bolo de chocolate</ion-select-option>
+        <ion-select-option value="">Sonho</ion-select-option>
+        <ion-select-option value="">Carolina</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked"><strong>Descrição</strong></ion-label>
+      <ion-input placeholder=""></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked"><strong>Validade</strong></ion-label>
+      <ion-input type="date" placeholder=""></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked"><strong>Preço</strong></ion-label>
+      <ion-input type="number" placeholder=""></ion-input>
+    </ion-item>
+  </ion-card>
+
+  <ion-button expand="block" routerLink="/">Procurar</ion-button>
+</form>
+
+</ion-content>
